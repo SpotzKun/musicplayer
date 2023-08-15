@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MMT_MUSIC</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+  <link rel="stylesheet" href="MMT_MUSIC.css" />
+
+  <script src="https://kit.fontawesome.com/860e7596f3.js"></script>
+
+</head>
+
+<body>
+  <html>
+
+  <body>
+    <div id="HiddingOverFlow"><!--ซ่อน UI ส่วนเกิน-->
+
+      <div id="player"><!--ตัวเล่น-->
+        <div id="justblock"></div>
+        <div id="player-track"><!--ตัวเล่นแทร็ก-->
+
+          <div id="album-name"></div><!--ชื่ออัลบั้มเพลง-->
+          <div id="track-name"></div><!--ชื่อแทร็กเพลง-->
+          <div id="track-time"><!--เวลาในแทร็กเพลง-->
+            <div id="current-time"></div><!--เวลาปัจจุบันในแทร็กเพลง-->
+            <div id="track-length"></div>
+          </div>
+          <div id="s-area"><!--ตัวบาร์เพลง-->
+            <div id="ins-time"></div>
+            <div id="s-hover"></div>
+            <div id="seek-bar"></div><!--บาร์เพลง-->
+          </div>
+        </div>
+
+        <div id="player-content">
+          <div id="album-art"><!--โชว์ภาพจากยูทูป-->
+          <img src="musicpic/3_30PM.jpg" class="active" id="_1">
+          <img src="musicpic/Constant moderato.jpg" id="_2">
+            
+            <div id="buffer-box">Buffering ...</div><!--BUFFER BOX-->
+          </div>
+          <div id="discPic" style="position:absolute;"><!--รูปแผ่นCD-->
+            <img src="img/Disc.png" alt="disc">
+          </div>
+          <div id="BorderDisc"><!--ภาพกลางแผ่นCD-->
+          </div>
+
+           <div id="player-controls">
+            <div class="control">
+              <div class="button" id="play-previous">
+                <i class="fas fa-backward"></i>
+              </div>
+            </div>
+            <div class="control">
+              <div class="button" id="play-pause-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="control">
+              <div class="button" id="play-next">
+                <i class="fas fa-forward"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type="text/javascript" async="" src="MMT_MUSIC.js"></script>
+  </body>
+
+  </html>
